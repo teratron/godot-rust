@@ -1,0 +1,16 @@
+[configuration]
+entry_symbol = "gdext_rust_init"
+compatibility_minimum = 4.1
+reloadable = true
+
+[libraries]
+linux.debug.x86_64     = "res://../rust/target/debug/libgodot-rust.so"
+linux.release.x86_64   = "res://../rust/target/release/libgodot-rust.so"
+windows.debug.x86_64   = "res://../rust/target/debug/godot-rust.dll"
+windows.release.x86_64 = "res://../rust/target/release/godot-rust.dll"
+macos.debug            = "res://../rust/target/debug/libgodot-rust.dylib"
+macos.release          = "res://../rust/target/release/libgodot-rust.dylib"
+macos.debug.arm64      = "res://../rust/target/debug/libgodot-rust.dylib"
+macos.release.arm64    = "res://../rust/target/release/libgodot-rust.dylib"
+web.debug.wasm32       = "res://../rust/target/wasm32-unknown-emscripten/debug/godot-rust.wasm"
+web.release.wasm32     = "res://../rust/target/wasm32-unknown-emscripten/release/godot-rust.wasm"
