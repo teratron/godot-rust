@@ -1,8 +1,7 @@
 #[warn(dead_code)]
 
 use godot::prelude::*;
-use godot::classes::Sprite2D;
-use godot::classes::ISprite2D;
+use godot::classes::{Sprite2D, ISprite2D};
 
 struct MyExtension;
 
@@ -14,7 +13,6 @@ unsafe impl ExtensionLibrary for MyExtension {}
 struct Player {
     speed: f64,
     angular_speed: f64,
-
     base: Base<Sprite2D>
 }
 
