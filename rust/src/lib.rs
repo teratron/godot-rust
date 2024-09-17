@@ -1,4 +1,4 @@
-#[warn(dead_code)]
+#![allow(unused)]
 
 use godot::prelude::*;
 use godot::classes::{Sprite2D, ISprite2D};
